@@ -1,38 +1,5 @@
 # OnlineBanking
 
-```mermaid
-flowchart TD
-	frontend[Angular Frontend]
-	https[HTTPS]
-	gateway[API Gateway]
-	lambda[AWS Lambda<br>(Auth Service)]
-	express[Express APIs<br>(Account Service)]
-	database[(Database<br>(PostgreSQL))]
-
-	frontend --> https --> gateway
-	gateway --> lambda
-	gateway --> express
-	lambda --> database
-```
-
-## README Styling
-
-```css
-a {
-		text-decoration: none;
-		color: #464feb;
-}
-
-tr th,
-tr td {
-		border: 1px solid #e6e6e6;
-}
-
-tr th {
-		background-color: #f5f5f5;
-}
-```
-
 # Phase 1: Basic Online Banking
 
 ## Features
@@ -61,15 +28,6 @@ Users can have:
 - Savings accounts
 
 **Database:**
-
-```typescript
-type Account = {
-		accountId: string;
-		userId: string;
-		accountType: string;
-		balance: number;
-};
-```
 
 **Concepts learned:**
 
