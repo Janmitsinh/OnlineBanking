@@ -1,0 +1,38 @@
+.sidebar {
+  width: 260px;
+  background: #0d1b2a;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding-top: 24px;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  padding: 0 24px 32px;
+}
+
+a {
+  padding: 16px 24px;
+  color: white;
+  text-decoration: none;
+  transition: .3s;
+}
+
+a:hover {
+  background: #1b263b;
+}
+
+@media(max-width:768px) {
+
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    overflow-x: auto;
+  }
+
+  a {
+    white-space: nowrap;
+  }
+}

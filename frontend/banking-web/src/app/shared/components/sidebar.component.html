@@ -1,0 +1,9 @@
+<aside class="sidebar">
+	<h1>Digital Bank</h1>
+
+	<nav aria-label="Main navigation">
+		@for (item of menuItems; track item.route) {
+			<a [routerLink]="item.route" routerLinkActive="active">{{ item.label }}</a>
+		}
+	</nav>
+</aside>
